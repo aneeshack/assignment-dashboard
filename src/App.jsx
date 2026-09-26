@@ -1,20 +1,3 @@
-// import Navbar from './components/Navbar'
-// import ProgressBar from './components/ProgressBar'
-// import Sidebar from './components/Sidebar'
-
-// const App = () => {
-//   return (
-//     <div>
-//       <Navbar/>
-//       <Sidebar/>
-//       <ProgressBar/>
-//     </div>
-//   )
-// }
-
-// export default App
-
-
 import { Navigate, Route, Routes } from "react-router-dom";
 import { useApp } from "./context/AppContext";
 
