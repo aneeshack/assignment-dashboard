@@ -1,16 +1,92 @@
-# React + Vite
+# AssignmentHub
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Assignment & Review Dashboard built as part of the Joineazy Frontend Developer Internship technical assignment.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+### Student
+- View assigned assignments
+- View due dates
+- Open external Drive submission link
+- Confirm assignment submission
+- Double-confirmation flow
+- Track submission progress
 
-## React Compiler
+### Admin
+- View created assignments
+- Create new assignments
+- Attach Drive submission links
+- View student submission status
+- View individual student progress
+- View overall assignment progress
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Tech Stack
 
-## Expanding the ESLint configuration
+- React.js
+- Vite
+- JavaScript
+- Tailwind CSS
+- React Router
+- Lucide React
+- LocalStorage
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Architecture
+
+The application follows a component-based architecture.
+
+Pages contain screen-level functionality while reusable UI elements are maintained inside the components directory.
+
+Context API is used for shared application state.
+
+LocalStorage is used to persist assignment and user state because no backend is required for this assignment.
+
+## Folder Structure
+
+src/
+├── components/
+├── context/
+├── data/
+├── pages/
+├── App.jsx
+├── main.jsx
+└── index.css
+
+## Installation
+
+Clone the repository:
+
+git clone YOUR_REPOSITORY_URL
+
+Install dependencies:
+
+npm install
+
+Start development server:
+
+npm run dev
+
+## Demo Login
+
+Student:
+Aneesha C.K
+
+Admin:
+Dr. Priya Menon
+
+The project uses mock authentication for demonstration purposes.
+
+## Design Decisions
+
+The UI uses a responsive card-based dashboard layout.
+
+Tailwind CSS is used for responsive styling.
+
+Reusable components such as StatCard, ProgressBar, AssignmentCard and ConfirmationModal reduce duplication.
+
+The Context API keeps shared assignment and user state centralized.
+
+LocalStorage provides persistence across browser refreshes.
+
+## Limitations
+
+This is a frontend-only implementation. Authentication, database operations and backend APIs are simulated using local data and browser localStorage.
